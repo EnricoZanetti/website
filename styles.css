@@ -116,19 +116,22 @@ a:hover {
     text-decoration: none;
 }
 
-/* Back Button Styles (used only on specific pages) */
-.back-button {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+/* Breadcrumb Styles */
+.breadcrumb {
     font-size: 14px;
-    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    color: #666;
 }
 
-.back-button:hover {
-    background-color: #0056b3;
+.breadcrumb a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 5px;
 }
