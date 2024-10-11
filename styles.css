@@ -1,137 +1,269 @@
 /* General Styles */
 body {
+    /* Apply 'Open Sans' font, with fallbacks to Arial and sans-serif */
     font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.6;
+    /* Remove default margin and padding from the body */
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
 }
 
-header, footer {
+/* Header Styling */
+header {
+    /* Establish a relative positioning context for absolute positioning within */
+    position: relative;
+    /* Add padding around the content inside the header */
+    padding: 20px;
+    /* Set the background color of the header to white */
     background-color: #fff;
+    /* Set the text color inside the header to dark gray */
     color: #333;
+    /* Center the text inside the header */
     text-align: center;
+    /* Add a light gray border at the bottom of the header */
     border-bottom: 1px solid #eaeaea;
 }
 
-header {
-    padding: 40px 0;
+/* Navigation Menu Styling */
+header nav {
+    /* Position the navigation menu absolutely within the header */
+    position: absolute;
+    /* Place the navigation 20 pixels from the top and right edges of the header */
+    top: 20px;
+    right: 20px;
+    /* Set a light gray background color for the navigation menu */
+    background-color: #f8f8f8;
+    /* Add padding inside the navigation menu */
+    padding: 10px;
+    /* Round the corners of the navigation menu */
+    border-radius: 5px;
 }
 
-footer {
-    padding: 20px 0;
-    border-top: 1px solid #eaeaea;
-    color: #999;
-}
-
-header img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-}
-
-header h1 {
+/* Navigation Menu List Styling */
+header nav ul {
+    /* Remove default list styling (bullet points) */
+    list-style: none;
+    /* Remove default margin and padding */
     margin: 0;
-    font-size: 2.5em;
-    font-weight: normal;
+    padding: 0;
+    /* Display list items horizontally */
+    display: flex;
 }
 
-nav {
-    margin-top: 20px;
+/* Navigation Menu Item Styling */
+header nav ul li {
+    /* Add space to the left of each menu item */
+    margin-left: 15px;
 }
 
-nav a {
-    margin: 0 15px;
-    color: #333;
+/* Remove the left margin from the first menu item */
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+/* Navigation Link Styling */
+header nav a {
+    /* Remove underline from links */
     text-decoration: none;
+    /* Set link text color to dark gray */
+    color: #333;
+    /* Make the link text bold */
     font-weight: bold;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* Navigation Link Hover Effect */
+header nav a:hover {
+    /* Change the link color to blue when hovered over */
+    color: #007BFF;
 }
 
+/* Header Image Styling */
+header img {
+    /* Make the image circular */
+    border-radius: 50%;
+    /* Set the image width and height */
+    width: 150px;
+    height: 150px;
+    /* Add space below the image */
+    margin-bottom: 20px;
+}
+
+/* Header Title (h1) Styling */
+header h1 {
+    /* Remove default margin */
+    margin: 0;
+    /* Set the font size of the main heading */
+    font-size: 2.5em;
+    /* Set the font weight to normal */
+    font-weight: normal;
+}
+
+/* Main Content Styling */
 main {
+    /* Set the maximum width of the content area */
     max-width: 800px;
+    /* Center the main content area horizontally */
     margin: 40px auto;
+    /* Add horizontal padding */
     padding: 0 20px;
 }
 
+/* Section and Article Styling */
 section, article {
+    /* Add space below each section and article */
     margin-bottom: 60px;
 }
 
+/* Subheading (h2) Styling */
 h2 {
+    /* Set the font size of subheadings */
     font-size: 1.75em;
+    /* Add space below the subheading */
     margin-bottom: 20px;
+    /* Add a light gray border below the subheading */
     border-bottom: 1px solid #eaeaea;
+    /* Add padding below the subheading text */
     padding-bottom: 10px;
 }
 
+/* Paragraph and Unordered List Text Styling */
 p, ul {
+    /* Set the font size for paragraphs and unordered lists */
     font-size: 1em;
 }
 
+/* Unordered List Styling */
 ul {
+    /* Use disc bullets for list items */
     list-style-type: disc;
+    /* Indent list items from the left */
     padding-left: 20px;
 }
 
+/* List Item Styling */
 ul li {
+    /* Add space below each list item */
     margin-bottom: 10px;
 }
 
+/* Blog List Styling */
 ul.blog-list {
+    /* Remove default list styling for the blog list */
     list-style-type: none;
+    /* Remove padding */
     padding: 0;
 }
 
+/* Blog List Item Styling */
 ul.blog-list li {
+    /* Add space below each blog list item */
     margin-bottom: 15px;
 }
 
+/* Blog List Link Styling */
 ul.blog-list a {
+    /* Increase the font size of blog links */
     font-size: 1.2em;
+    /* Remove underline from blog links */
     text-decoration: none;
+    /* Set the text color of blog links */
     color: #333;
 }
 
+/* Blog List Link Hover Effect */
 ul.blog-list a:hover {
+    /* Underline blog links when hovered over */
     text-decoration: underline;
 }
 
+/* Date Text Styling */
 .date {
+    /* Set the text color for dates */
     color: #999;
+    /* Set the font size for dates */
     font-size: 0.9em;
 }
 
+/* General Link Styling */
 a {
+    /* Set the text color for all links */
     color: #333;
+    /* Underline all links */
     text-decoration: underline;
 }
 
+/* General Link Hover Effect */
 a:hover {
+    /* Remove underline from links when hovered over */
     text-decoration: none;
 }
 
 /* Breadcrumb Styles */
 .breadcrumb {
+    /* Set the font size of the breadcrumb */
     font-size: 14px;
+    /* Add space below the breadcrumb */
     margin-bottom: 20px;
+    /* Set the text color of the breadcrumb */
     color: #666;
 }
 
+/* Breadcrumb Link Styling */
 .breadcrumb a {
+    /* Set the link color in the breadcrumb to blue */
     color: #007BFF;
+    /* Remove underline from breadcrumb links */
     text-decoration: none;
 }
 
+/* Breadcrumb Link Hover Effect */
 .breadcrumb a:hover {
+    /* Underline breadcrumb links when hovered over */
     text-decoration: underline;
 }
 
+/* Breadcrumb Separator Styling */
 .breadcrumb span {
+    /* Add space around the breadcrumb separator */
     margin: 0 5px;
+}
+
+/* Footer Styling */
+footer {
+    /* Add vertical padding to the footer */
+    padding: 20px 0;
+    /* Set the background color of the footer to white */
+    background-color: #fff;
+    /* Set the text color in the footer to light gray */
+    color: #999;
+    /* Center the text inside the footer */
+    text-align: center;
+    /* Add a light gray border at the top of the footer */
+    border-top: 1px solid #eaeaea;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    /* Adjust navigation menu styling on small screens */
+    header nav {
+        /* Change position to static so it flows with the content */
+        position: static;
+        /* Add margin on top */
+        margin-top: 20px;
+    }
+
+    /* Stack navigation items vertically */
+    header nav ul {
+        /* Change flex direction to column to stack items */
+        flex-direction: column;
+        /* Align items to the start (left) */
+        align-items: flex-start;
+    }
+
+    /* Adjust navigation item margins on small screens */
+    header nav ul li {
+        /* Remove left margin */
+        margin-left: 0;
+        /* Add space below each menu item */
+        margin-bottom: 10px;
+    }
 }
