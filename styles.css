@@ -19,12 +19,44 @@ header {
     padding: 20px;
     /* Set the background color of the header to dark */
     background-color: #1a1a1a; /* Dark gray background */
-    /* Set the text color inside the header to light */
-    color: #ffffff; /* White text color */
     /* Center the text inside the header */
     text-align: center;
     /* Add a darker border at the bottom of the header */
     border-bottom: 1px solid #333333; /* Darker border color */
+}
+
+/* Profile Container */
+header .profile {
+    /* Display items in a row and center them vertically */
+    display: flex;
+    align-items: center;
+    /* Position the profile container in the top left corner */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Profile Image Styling */
+header .profile img {
+    /* Make the image circular */
+    border-radius: 50%;
+    /* Set smaller dimensions for the image */
+    width: 80px;
+    height: 80px;
+    /* Add space to the right of the image */
+    margin-right: 15px;
+}
+
+/* Profile Name Styling */
+header .profile h1 {
+    /* Remove default margin */
+    margin: 0;
+    /* Set font size for the name */
+    font-size: 1.5em;
+    /* Set text color */
+    color: #ffffff;
+    /* Align text to the left */
+    text-align: left;
 }
 
 /* Navigation Menu Styling */
@@ -78,27 +110,6 @@ header nav a {
 header nav a:hover {
     /* Change the link color to an accent color when hovered over */
     color: #00bcd4; /* Cyan accent color */
-}
-
-/* Header Image Styling */
-header img {
-    /* Make the image circular */
-    border-radius: 50%;
-    /* Set the image width and height */
-    width: 150px;
-    height: 150px;
-    /* Add space below the image */
-    margin-bottom: 20px;
-}
-
-/* Header Title (h1) Styling */
-header h1 {
-    /* Remove default margin */
-    margin: 0;
-    /* Set the font size of the main heading */
-    font-size: 2.5em;
-    /* Set the font weight to normal */
-    font-weight: normal;
 }
 
 /* Main Content Styling */
@@ -273,5 +284,15 @@ footer {
         margin-left: 0;
         /* Add space below each menu item */
         margin-bottom: 10px;
+    }
+
+    /* Adjust profile container for small screens */
+    header .profile {
+        /* Position statically to flow with the document */
+        position: static;
+        /* Center the profile container */
+        justify-content: center;
+        /* Add margin at the bottom */
+        margin-bottom: 20px;
     }
 }
