@@ -5,6 +5,10 @@ body {
     /* Remove default margin and padding from the body */
     margin: 0;
     padding: 0;
+    /* Set background color for dark mode */
+    background-color: #121212; /* Dark background color */
+    /* Set text color for the body */
+    color: #e0e0e0; /* Light gray text color */
 }
 
 /* Header Styling */
@@ -13,14 +17,14 @@ header {
     position: relative;
     /* Add padding around the content inside the header */
     padding: 20px;
-    /* Set the background color of the header to white */
-    background-color: #fff;
-    /* Set the text color inside the header to dark gray */
-    color: #333;
+    /* Set the background color of the header to dark */
+    background-color: #1a1a1a; /* Dark gray background */
+    /* Set the text color inside the header to light */
+    color: #ffffff; /* White text color */
     /* Center the text inside the header */
     text-align: center;
-    /* Add a light gray border at the bottom of the header */
-    border-bottom: 1px solid #eaeaea;
+    /* Add a darker border at the bottom of the header */
+    border-bottom: 1px solid #333333; /* Darker border color */
 }
 
 /* Navigation Menu Styling */
@@ -30,8 +34,8 @@ header nav {
     /* Place the navigation 20 pixels from the top and right edges of the header */
     top: 20px;
     right: 20px;
-    /* Set a light gray background color for the navigation menu */
-    background-color: #f8f8f8;
+    /* Set a darker background color for the navigation menu */
+    background-color: #333333; /* Darker background */
     /* Add padding inside the navigation menu */
     padding: 10px;
     /* Round the corners of the navigation menu */
@@ -64,16 +68,16 @@ header nav ul li:first-child {
 header nav a {
     /* Remove underline from links */
     text-decoration: none;
-    /* Set link text color to dark gray */
-    color: #333;
+    /* Set link text color to light */
+    color: #ffffff; /* White text color */
     /* Make the link text bold */
     font-weight: bold;
 }
 
 /* Navigation Link Hover Effect */
 header nav a:hover {
-    /* Change the link color to blue when hovered over */
-    color: #007BFF;
+    /* Change the link color to an accent color when hovered over */
+    color: #00bcd4; /* Cyan accent color */
 }
 
 /* Header Image Styling */
@@ -119,16 +123,20 @@ h2 {
     font-size: 1.75em;
     /* Add space below the subheading */
     margin-bottom: 20px;
-    /* Add a light gray border below the subheading */
-    border-bottom: 1px solid #eaeaea;
+    /* Add a darker border below the subheading */
+    border-bottom: 1px solid #333333; /* Darker border color */
     /* Add padding below the subheading text */
     padding-bottom: 10px;
+    /* Set subheading text color */
+    color: #ffffff; /* White text color */
 }
 
 /* Paragraph and Unordered List Text Styling */
 p, ul {
     /* Set the font size for paragraphs and unordered lists */
     font-size: 1em;
+    /* Set text color */
+    color: #e0e0e0; /* Light gray text color */
 }
 
 /* Unordered List Styling */
@@ -166,7 +174,7 @@ ul.blog-list a {
     /* Remove underline from blog links */
     text-decoration: none;
     /* Set the text color of blog links */
-    color: #333;
+    color: #00bcd4; /* Cyan accent color */
 }
 
 /* Blog List Link Hover Effect */
@@ -178,7 +186,7 @@ ul.blog-list a:hover {
 /* Date Text Styling */
 .date {
     /* Set the text color for dates */
-    color: #999;
+    color: #aaaaaa; /* Lighter gray color */
     /* Set the font size for dates */
     font-size: 0.9em;
 }
@@ -186,7 +194,7 @@ ul.blog-list a:hover {
 /* General Link Styling */
 a {
     /* Set the text color for all links */
-    color: #333;
+    color: #00bcd4; /* Cyan accent color */
     /* Underline all links */
     text-decoration: underline;
 }
@@ -204,13 +212,13 @@ a:hover {
     /* Add space below the breadcrumb */
     margin-bottom: 20px;
     /* Set the text color of the breadcrumb */
-    color: #666;
+    color: #cccccc; /* Light gray */
 }
 
 /* Breadcrumb Link Styling */
 .breadcrumb a {
-    /* Set the link color in the breadcrumb to blue */
-    color: #007BFF;
+    /* Set the link color in the breadcrumb to accent color */
+    color: #00bcd4; /* Cyan accent color */
     /* Remove underline from breadcrumb links */
     text-decoration: none;
 }
@@ -231,14 +239,14 @@ a:hover {
 footer {
     /* Add vertical padding to the footer */
     padding: 20px 0;
-    /* Set the background color of the footer to white */
-    background-color: #fff;
-    /* Set the text color in the footer to light gray */
-    color: #999;
+    /* Set the background color of the footer to dark */
+    background-color: #1a1a1a; /* Dark background */
+    /* Set the text color in the footer to light */
+    color: #e0e0e0; /* Light gray text */
     /* Center the text inside the footer */
     text-align: center;
-    /* Add a light gray border at the top of the footer */
-    border-top: 1px solid #eaeaea;
+    /* Add a darker border at the top of the footer */
+    border-top: 1px solid #333333; /* Darker border color */
 }
 
 /* Responsive Design for Mobile Devices */
