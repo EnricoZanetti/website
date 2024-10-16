@@ -5,13 +5,103 @@ html, body {
     padding: 0;
 }
 
+/* General Styles */
 body {
-    /* Flex container setup */
-    display: flex;
-    flex-direction: column;
     font-family: 'Open Sans', Arial, sans-serif;
     background-color: #121212;
     color: #e0e0e0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+/* Timeline Entry Row */
+.entry.row {
+    display: grid;
+    grid-template-columns: 120px 60px 1fr; /* Year, dot+image, description */
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+/* Connecting line for the timeline */
+.container::before {
+    content: '';
+    position: absolute;
+    left: 105px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e0e0e0;
+}
+
+.timespan {
+    font-size: 1.0em;
+    color: #e0e0e0;
+    padding-right: 20px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.ico {
+    position: relative;
+    width: 60px;
+    text-align: center;
+}
+
+.entry-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+
+.ico img {
+    margin-top: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.desc {
+    padding-left: 20px;
+    color: #e0e0e0;
+}
+
+.desc p {
+    margin: 0;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .entry.row {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+        grid-template-rows: auto auto auto;
+        text-align: left;
+    }
+
+    .timespan {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .desc {
+        padding-left: 0;
+    }
+
+    .entry-dot {
+        left: -10px; /* Adjust dot position on smaller screens */
+    }
+
+    .container::before {
+        left: 10px; /* Adjust line position on smaller screens */
+    }
 }
 
 /* Header Styling */
@@ -147,11 +237,5 @@ footer {
     header nav ul li {
         margin-left: 0;
         margin-bottom: 10px;
-    }
-
-    header .profile {
-        position: static;
-        justify-content: center;
-        margin-bottom: 20px;
     }
 }
