@@ -24,13 +24,10 @@ header {
     flex-shrink: 0; /* Prevent shrinking */
 }
 
-
 /* Profile Container */
 header .profile {
-    /* Display items in a row and center them vertically */
     display: flex;
     align-items: center;
-    /* Position the profile container in the top left corner */
     position: absolute;
     top: 20px;
     left: 20px;
@@ -38,261 +35,123 @@ header .profile {
 
 /* Profile Image Styling */
 header .profile img {
-    /* Make the image circular */
     border-radius: 50%;
-    /* Set smaller dimensions for the image */
     width: 80px;
     height: 80px;
-    /* Add space to the right of the image */
     margin-right: 15px;
 }
 
 /* Profile Name Styling */
 header .profile h1 {
-    /* Remove default margin */
     margin: 0;
-    /* Set font size for the name */
     font-size: 1.5em;
-    /* Set text color */
     color: #ffffff;
-    /* Align text to the left */
     text-align: left;
 }
 
 /* Navigation Menu Styling */
 header nav {
-    /* Position the navigation menu absolutely within the header */
     position: absolute;
-    /* Place the navigation 20 pixels from the top and right edges of the header */
     top: 20px;
     right: 20px;
-    /* Set a darker background color for the navigation menu */
-    background-color: #333333; /* Darker background */
-    /* Add padding inside the navigation menu */
+    background-color: #333333;
     padding: 10px;
-    /* Round the corners of the navigation menu */
     border-radius: 5px;
 }
 
-/* Navigation Menu List Styling */
 header nav ul {
-    /* Remove default list styling (bullet points) */
     list-style: none;
-    /* Remove default margin and padding */
     margin: 0;
     padding: 0;
-    /* Display list items horizontally */
     display: flex;
 }
 
-/* Navigation Menu Item Styling */
 header nav ul li {
-    /* Add space to the left of each menu item */
     margin-left: 15px;
 }
 
-/* Remove the left margin from the first menu item */
 header nav ul li:first-child {
     margin-left: 0;
 }
 
-/* Navigation Link Styling */
 header nav a {
-    /* Remove underline from links */
     text-decoration: none;
-    /* Set link text color to light */
-    color: #ffffff; /* White text color */
-    /* Make the link text bold */
+    color: #ffffff;
     font-weight: bold;
 }
 
-/* Navigation Link Hover Effect */
 header nav a:hover {
-    /* Change the link color to an accent color when hovered over */
-    color: #00bcd4; /* Cyan accent color */
+    color: #00bcd4;
 }
 
 /* Main Content Styling */
 main {
-    /* Set the maximum width of the content area */
+    flex: 1; /* Allow main to grow and fill space */
     max-width: 800px;
-    /* Center the main content area horizontally */
     margin: 40px auto;
-    /* Add horizontal padding */
     padding: 0 20px;
 }
 
 /* Section and Article Styling */
 section, article {
-    /* Add space below each section and article */
     margin-bottom: 60px;
 }
 
 /* Subheading (h2) Styling */
 h2 {
-    /* Set the font size of subheadings */
     font-size: 1.75em;
-    /* Add space below the subheading */
     margin-bottom: 20px;
-    /* Add a darker border below the subheading */
-    border-bottom: 1px solid #333333; /* Darker border color */
-    /* Add padding below the subheading text */
+    border-bottom: 1px solid #333333;
     padding-bottom: 10px;
-    /* Set subheading text color */
-    color: #ffffff; /* White text color */
+    color: #ffffff;
 }
 
 /* Paragraph and Unordered List Text Styling */
 p, ul {
-    /* Set the font size for paragraphs and unordered lists */
     font-size: 1em;
-    /* Set text color */
-    color: #e0e0e0; /* Light gray text color */
+    color: #e0e0e0;
 }
 
 /* Unordered List Styling */
 ul {
-    /* Use disc bullets for list items */
     list-style-type: disc;
-    /* Indent list items from the left */
     padding-left: 20px;
 }
 
-/* List Item Styling */
 ul li {
-    /* Add space below each list item */
     margin-bottom: 10px;
-}
-
-/* Blog List Styling */
-ul.blog-list {
-    /* Remove default list styling for the blog list */
-    list-style-type: none;
-    /* Remove padding */
-    padding: 0;
-}
-
-/* Blog List Item Styling */
-ul.blog-list li {
-    /* Add space below each blog list item */
-    margin-bottom: 15px;
-}
-
-/* Blog List Link Styling */
-ul.blog-list a {
-    /* Increase the font size of blog links */
-    font-size: 1.2em;
-    /* Remove underline from blog links */
-    text-decoration: none;
-    /* Set the text color of blog links */
-    color: #00bcd4; /* Cyan accent color */
-}
-
-/* Blog List Link Hover Effect */
-ul.blog-list a:hover {
-    /* Underline blog links when hovered over */
-    text-decoration: underline;
-}
-
-/* Date Text Styling */
-.date {
-    /* Set the text color for dates */
-    color: #aaaaaa; /* Lighter gray color */
-    /* Set the font size for dates */
-    font-size: 0.9em;
-}
-
-/* General Link Styling */
-a {
-    /* Set the text color for all links */
-    color: #00bcd4; /* Cyan accent color */
-    /* Underline all links */
-    text-decoration: underline;
-}
-
-/* General Link Hover Effect */
-a:hover {
-    /* Remove underline from links when hovered over */
-    text-decoration: none;
-}
-
-/* Breadcrumb Styles */
-.breadcrumb {
-    /* Set the font size of the breadcrumb */
-    font-size: 14px;
-    /* Add space below the breadcrumb */
-    margin-bottom: 20px;
-    /* Set the text color of the breadcrumb */
-    color: #cccccc; /* Light gray */
-}
-
-/* Breadcrumb Link Styling */
-.breadcrumb a {
-    /* Set the link color in the breadcrumb to accent color */
-    color: #00bcd4; /* Cyan accent color */
-    /* Remove underline from breadcrumb links */
-    text-decoration: none;
-}
-
-/* Breadcrumb Link Hover Effect */
-.breadcrumb a:hover {
-    /* Underline breadcrumb links when hovered over */
-    text-decoration: underline;
-}
-
-/* Breadcrumb Separator Styling */
-.breadcrumb span {
-    /* Add space around the breadcrumb separator */
-    margin: 0 5px;
 }
 
 /* Footer Styling */
 footer {
-    /* Add vertical padding to the footer */
     padding: 20px 0;
-    /* Set the background color of the footer to dark */
-    background-color: #1a1a1a; /* Dark background */
-    /* Set the text color in the footer to light */
-    color: #e0e0e0; /* Light gray text */
-    /* Center the text inside the footer */
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     text-align: center;
-    /* Add a darker border at the top of the footer */
-    border-top: 1px solid #333333; /* Darker border color */
+    border-top: 1px solid #333333;
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 /* Responsive Design for Mobile Devices */
 @media (max-width: 600px) {
-    /* Adjust navigation menu styling on small screens */
     header nav {
-        /* Change position to static so it flows with the content */
         position: static;
-        /* Add margin on top */
         margin-top: 20px;
     }
 
-    /* Stack navigation items vertically */
     header nav ul {
-        /* Change flex direction to column to stack items */
         flex-direction: column;
-        /* Align items to the start (left) */
         align-items: flex-start;
     }
 
-    /* Adjust navigation item margins on small screens */
     header nav ul li {
-        /* Remove left margin */
         margin-left: 0;
-        /* Add space below each menu item */
         margin-bottom: 10px;
     }
 
-    /* Adjust profile container for small screens */
     header .profile {
-        /* Position statically to flow with the document */
         position: static;
-        /* Center the profile container */
         justify-content: center;
-        /* Add margin at the bottom */
         margin-bottom: 20px;
     }
 }
