@@ -1,29 +1,29 @@
 /* General Styles */
-body {
-    /* Apply 'Open Sans' font, with fallbacks to Arial and sans-serif */
-    font-family: 'Open Sans', Arial, sans-serif;
-    /* Remove default margin and padding from the body */
+html, body {
+    height: 100%; /* Full viewport height */
     margin: 0;
     padding: 0;
-    /* Set background color for dark mode */
-    background-color: #121212; /* Dark background color */
-    /* Set text color for the body */
-    color: #e0e0e0; /* Light gray text color */
+}
+
+body {
+    /* Flex container setup */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 /* Header Styling */
 header {
-    /* Establish a relative positioning context for absolute positioning within */
     position: relative;
-    /* Add padding around the content inside the header */
     padding: 20px;
-    /* Set the background color of the header to dark */
-    background-color: #1a1a1a; /* Dark gray background */
-    /* Center the text inside the header */
+    background-color: #1a1a1a;
     text-align: center;
-    /* Add a darker border at the bottom of the header */
-    border-bottom: 1px solid #333333; /* Darker border color */
+    border-bottom: 1px solid #333333;
+    flex-shrink: 0; /* Prevent shrinking */
 }
+
 
 /* Profile Container */
 header .profile {
